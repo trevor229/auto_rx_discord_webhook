@@ -1,0 +1,14 @@
+[Unit]
+Description=auto_rx
+After=syslog.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/auto_rx_discord_webhook.py
+Restart=always
+RestartSec=120
+WorkingDirectory=/home/pi/
+User=pi
+SyslogIdentifier=auto_rx_discord
+
+[Install]
+WantedBy=multi-user.target
