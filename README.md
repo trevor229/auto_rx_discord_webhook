@@ -1,7 +1,7 @@
 # auto_rx_discord_webhook
 Script that listens for Horus UDP packets from radiosonde_auto_rx and notifies of launched sondes via discord webhook
 
-This script is meant to be run on the same Pi you have auto_rx running on. I run the script (Python 3) using systemd and the included service file. I will admit its not great, and it only keeps a volatile list of sonde IDs in a dict, but considering the turnaround time of sondes, it should be fine. At worst, stopping and re-running gives another webhook embed ¯\_(ツ)_/¯
+This script is meant to be run on the same Pi you have auto_rx running on. I run the script (Python 3) using systemd and the included service file. I will admit its not great, and it only keeps a volatile list of sonde IDs in a dict, but considering the turnaround time of sondes, it should be fine. At worst, stopping and re-running gives another webhook embed.
 
 ## Requirements
 * discord_webhook
